@@ -23,4 +23,9 @@ class SecondServiceController {
         log.info("header is $header")
         return "Hello World in Second Service"
     }
+
+    @GetMapping("/check")
+    fun check(): String {
+        return "Hi, there! This is a message from Second Service"
+    }
 }
